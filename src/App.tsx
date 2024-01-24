@@ -7,7 +7,7 @@ const App: FC = (): ReactElement => {
   return (
     <ThemeProvider theme={customTheme}>
       <CssBaseline />
-      <Dashboard></Dashboard>
+      <Dashboard />
     </ThemeProvider>
   );
 };
