@@ -3,7 +3,7 @@ import { Grid } from '@mui/material';
 import Profile from './Profile';
 import { CreateTaskForm } from './createTaskForm/CreateTaskForm';
 
-const Sidebar: FC = (): ReactElement => {
+export const Sidebar: FC = (): ReactElement => {
   return (
     <Grid
       item
@@ -26,5 +26,3 @@ const Sidebar: FC = (): ReactElement => {
     </Grid>
   );
 };
-
-export default Sidebar;
