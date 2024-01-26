@@ -8,7 +8,7 @@ import { counterLabel } from './helpers/counterLabel';
 import PropTypes from 'prop-types';
 
 export const TaskCounter: FC<ITaskCounter> = (props): ReactElement => {
-  const { count = 0, status = Status.inProgress } = props;
+  const { count = 0, status = Status.completed } = props;
   return (
     <>
       <Box
@@ -24,7 +24,7 @@ export const TaskCounter: FC<ITaskCounter> = (props): ReactElement => {
             width: '74px',
             height: '74px',
             marginBottom: '16px',
-            borderColor: `${counterBorderColor(status)}`,
+            borderColor: counterBorderColor(status),
           }}
         >
           <Typography color="#fff" variant="h5">
